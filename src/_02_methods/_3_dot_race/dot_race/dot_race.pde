@@ -15,6 +15,7 @@ void setup() {
     size(800, 200);
     
     //1. Set the variable named x to 50.
+x = 50;
 }
 
 void draw() {
@@ -23,9 +24,15 @@ void draw() {
  
     //2. Draw an ellipse of height and width 50. Make sure to use the x variable for its X position. 
     //   Pick a y value that places it half way down the window.
-      
+      fill(#00FF00);
+      ellipse(x,100, 50, 50);
+     if(mousePressed) {
+      x += 1; 
+     }
     //3. Make the ellipse a nice color
-
+      if(x>800){
+        playSound();
+      }
     //4. If the mouse is pressed change the x value so that the dot moves to the right
 
     //5. If your dot moves slowly, make it move faster. If it moves too quickly, slow it down
@@ -37,7 +44,7 @@ void draw() {
 
 }
 
-/*
+
 import ddf.minim.*;
 boolean soundPlayed = false;
 void playSound() {
@@ -54,4 +61,3 @@ void playSound() {
   textSize(36);
   text("WINNER!!", width/2, height/2);
 }
-*/

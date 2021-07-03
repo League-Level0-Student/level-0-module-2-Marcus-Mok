@@ -2,13 +2,18 @@
 //    Level 0
 
 package _02_methods._1_animal_farm;
+import java.util.Random;
+
+import javax.swing.JOptionPane;
 
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import java.util.Random;
 
+import javax.swing.JOptionPane;
 public class AnimalFarm {
 	
 	/***********  SOUND ***************
@@ -28,9 +33,25 @@ public class AnimalFarm {
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		for (int i = 0; i<2147483647; i++) { 
+		String animals = JOptionPane.showInputDialog ("What is the animal you want to see/hear?");
+		if  (animals.equalsIgnoreCase("cow")){
+		moo();
+		}
+		if  (animals.equalsIgnoreCase("duck")){
+			quack();
+			}
+		if  (animals.equalsIgnoreCase("dog")){
+			woof();
+			}
+		if  (animals.equalsIgnoreCase("cat")){
+			meow();
+			}
+		if  (animals.equalsIgnoreCase("llama")){
+			llamaScream();
+			}
+		}
 	}
 
 	void moo() {
