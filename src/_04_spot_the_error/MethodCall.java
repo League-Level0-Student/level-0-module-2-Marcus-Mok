@@ -11,6 +11,7 @@ public class MethodCall {
 	}
 	
 	static void printMessage(String aMessage) {
+	
 		System.out.println(aMessage);
 	}
 }
