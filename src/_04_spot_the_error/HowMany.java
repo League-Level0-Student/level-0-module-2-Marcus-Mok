@@ -1,3 +1,4 @@
+
 package _04_spot_the_error;
 
 import java.util.Random;
@@ -9,7 +10,7 @@ public class HowMany {
 	// Change one line of code to fix this program.
 	
 	public static void main(String[] args) {
-		int number = 0;
+		int number = new HowMany().getRandomNumber();
 		System.out.println(number);
 	}
 	
